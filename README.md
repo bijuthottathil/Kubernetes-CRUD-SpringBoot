@@ -126,7 +126,53 @@ Now I got this page
 
 ![image](https://github.com/user-attachments/assets/ad91d09d-ce88-46b6-920a-f2afc092055e)
 
-
 Service is running. Now I need call API using postman or any other tools to pass json value and test
+
+Using postman, I submitted my request with data
+
+{
+  "name":"watch",
+   "qty":2,
+   "price":3450
+}
+
+![image](https://github.com/user-attachments/assets/174608ff-cc8e-41d6-9430-1fe7f59d3d9b)
+
+
+Navigaged to My SQL. You can see results
+
+![image](https://github.com/user-attachments/assets/b92910df-6820-4322-90d7-5b705279bede)
+
+Posted 3 records so far
+
+![image](https://github.com/user-attachments/assets/4c049aa5-0a57-4419-96bb-78305e9d07b1)
+
+
+
+
+![image](https://github.com/user-attachments/assets/92a5f286-ad8f-43a3-ab29-36936219b35a)
+
+Update is working
+
+![image](https://github.com/user-attachments/assets/ba1eb27e-1306-4ed8-a18c-057553cfb34e)
+
+
+![image](https://github.com/user-attachments/assets/c6b73e3f-03de-40c3-9849-c2ce4ad01758)
+
+Finally sharing Minikude Dashboard screenshots
+
+![image](https://github.com/user-attachments/assets/4f0240c3-2ded-45b9-8bd2-7586e2ea01db)
+
+![image](https://github.com/user-attachments/assets/bee69166-a350-4402-ab2e-9154f540ab14)
+
+
+![image](https://github.com/user-attachments/assets/33051b79-5649-485d-91da-47a072c32458)
+
+
+![image](https://github.com/user-attachments/assets/0dc11593-0c4c-4a0e-9cde-e92544887d56)
+
+![image](https://github.com/user-attachments/assets/7b2e4cc6-3ff2-4f9d-8063-3f7af6f29446)
+
+![image](https://github.com/user-attachments/assets/db7f9497-a847-494d-b4f1-5fc0a0521ed5)
 
 
