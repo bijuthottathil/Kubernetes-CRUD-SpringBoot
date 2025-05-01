@@ -1,5 +1,6 @@
 # springboot-crud-k8s
-Run &amp; Deploy Spring Boot CRUD Application With MySQL on K8S
+Run  Deploy Spring Boot CRUD Application With MySQL on K8S
+![image](https://github.com/user-attachments/assets/f560b005-883c-4c03-936f-f59389420b0e)
 
 
 Minikube started
