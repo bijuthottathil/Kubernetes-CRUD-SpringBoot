@@ -42,3 +42,24 @@ mysql> show databases
 | sys                |
 +--------------------+
 5 rows in set (0.01 sec)
+
+
+Database is ready, now I will switch to Spring Boot app configuration
+
+
+![image](https://github.com/user-attachments/assets/465925a2-9c0a-4aee-a55c-05a095f16e22)
+
+compiled jar is available here
+
+
+
+![image](https://github.com/user-attachments/assets/9128bc7b-d589-4f26-a4b4-568884bd46ed)
+
+Now we have to create dockerfile and build it
+
+![image](https://github.com/user-attachments/assets/62b5f191-c16c-4cbe-9dcc-c307052df8ae)
+
+docker build -t springboot-crud-k8s:1.0 .
+
+
+
