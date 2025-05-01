@@ -61,5 +61,72 @@ Now we have to create dockerfile and build it
 
 docker build -t springboot-crud-k8s:1.0 .
 
+![image](https://github.com/user-attachments/assets/6d2fab42-7eaf-4c7b-8a82-2e2d7d1c487e)
+
+D:\springboot-crud-k8s>docker images
+REPOSITORY                    TAG       IMAGE ID       CREATED              SIZE
+springboot-crud-k8s           1.0       d26a340f9903   About a minute ago   877MB
+gcr.io/k8s-minikube/kicbase   v0.0.46   cef9f3c2e399   3 months ago         1.86GB
+gcr.io/k8s-minikube/kicbase   <none>    fd2d445ddcc3   3 months ago         1.86GB
+
+Now we need to create yaml file for service and app deployment
+
+
+![image](https://github.com/user-attachments/assets/53b4c3cf-641f-45ac-9496-52509d6cef97)
+
+
+
+![image](https://github.com/user-attachments/assets/b953e23b-d4ae-4d8e-bec8-eb376bb7ce54)
+
+![image](https://github.com/user-attachments/assets/73be2830-d0a1-4b99-98cc-5ed69f5c0a1d)
+
+PODs are not running. You can review this issue in Minikube Dashboard. Now we need to fix this issue
+
+![image](https://github.com/user-attachments/assets/11d06fb1-0cc2-41a1-8606-c57e2f28ca4b)
+
+
+Issue resolved after pushing image with my gituser name and modified deployment yaml with following reference
+
+   image: bijuthottathil/springboot-crud-k8s:1.0
+
+   ![image](https://github.com/user-attachments/assets/a468438f-753f-4945-a009-1efc2b676d68)
+
+
+All pods are running now
+
+![image](https://github.com/user-attachments/assets/9f960a57-413e-4175-923a-6c94d9543991)
+
+
+I can see table created 
+
+
+![image](https://github.com/user-attachments/assets/795160b4-c527-4c61-ab03-19310c038f40)
+
+![image](https://github.com/user-attachments/assets/d3a84fcb-7ed5-4e6f-8492-a482aab64d05)
+
+D:\springboot-crud-k8s>minikube ip
+192.168.49.2
+
+D:\springboot-crud-k8s>kubectl get svc
+NAME                  TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
+kubernetes            ClusterIP   10.96.0.1      <none>        443/TCP          72m
+mysql                 ClusterIP   None           <none>        3306/TCP         71m
+springboot-crud-svc   NodePort    10.108.89.57   <none>        8080:31690/TCP   42m
+
+![image](https://github.com/user-attachments/assets/e225a938-071d-4fe5-9648-edcdee79fd55)
+
+
+I port forwarded service to 8080:8080
+
+
+![image](https://github.com/user-attachments/assets/0e3d6ee7-db95-44ca-a329-ba9792b8c062)
+
+
+Now I got this page
+
+![image](https://github.com/user-attachments/assets/ad91d09d-ce88-46b6-920a-f2afc092055e)
+
+
+Service is running. Now I need call API using postman or any other tools to pass json value and test
 
 
