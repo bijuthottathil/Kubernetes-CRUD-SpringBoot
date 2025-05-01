@@ -59,7 +59,7 @@ Now we have to create dockerfile and build it
 
 ![image](https://github.com/user-attachments/assets/62b5f191-c16c-4cbe-9dcc-c307052df8ae)
 
-docker build -t springboot-crud-k8s:1.0 .
+docker build -t springboot-crud-k8s:1.0 .  ( later I found issue and used docker tag springboot-crud-k8s:1.0 bijuthottathil/springboot-crud-k8s:1.0  and docker push bijuthottathil/springboot-crud-k8s:1.0) (bijuthottathil is my git userid)
 
 ![image](https://github.com/user-attachments/assets/6d2fab42-7eaf-4c7b-8a82-2e2d7d1c487e)
 
@@ -70,6 +70,7 @@ gcr.io/k8s-minikube/kicbase   v0.0.46   cef9f3c2e399   3 months ago         1.86
 gcr.io/k8s-minikube/kicbase   <none>    fd2d445ddcc3   3 months ago         1.86GB
 
 Now we need to create yaml file for service and app deployment
+![image](https://github.com/user-attachments/assets/0158813e-69b5-4a9a-a4ac-35ec9460e4fc)
 
 
 ![image](https://github.com/user-attachments/assets/53b4c3cf-641f-45ac-9496-52509d6cef97)
