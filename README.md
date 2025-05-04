@@ -102,6 +102,9 @@ All pods are running now
 
 ![image](https://github.com/user-attachments/assets/9f960a57-413e-4175-923a-6c94d9543991)
 
+ kubectl exec -it mysql-545ffd8b7d-qbpk6 -- /bin/bash
+ bash-5.1# mysql -h mysql -u root -p
+Enter password: 
 
 I can see table created 
 
