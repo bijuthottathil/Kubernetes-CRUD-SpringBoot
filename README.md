@@ -91,6 +91,10 @@ Issue resolved after pushing image with my gituser name and modified deployment 
 
    image: bijuthottathil/springboot-crud-k8s:1.0
 
+   docker build -t springboot-crud-k8s:1.0 .
+    docker tag springboot-crud-k8s:1.0 bijuthottathil/springboot-crud-k8s:1.0
+    docker push bijuthottathil/springboot-crud-k8s:1.0
+
    ![image](https://github.com/user-attachments/assets/a468438f-753f-4945-a009-1efc2b676d68)
 
 
